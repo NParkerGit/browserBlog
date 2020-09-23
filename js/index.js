@@ -5,11 +5,27 @@ import aPages from "../pages/index.js";
 import aItems from "../items/index.js";
 
 class Page {
+    constructor(){
+        this.sName = "Nicholas Parker";
+        const sBase = document.location.pathname;
+        if(sBase[sBase.length - 1] == "/"){
+            this.sBase = sBase.substr(0, sBase.length -1);
+        }else{
+            const sFile = '/' + document.location.pathname.split('/').pop();
+            this.sBase = sBase.substr(0, sBase.length - sFile.length); 
+        }
+    }
+    getImageSrc(sImage){
+        if(sImage.match(/\:\/\//)){
+            return sImage;
+        }else{
+            return this.sBase + sImage;
+        }
+    }
     render() {
         console.log("render called on page");
     }
 }
-
 class Items extends Page{
     constructor(oItems) {
         super();
