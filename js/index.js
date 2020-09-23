@@ -72,7 +72,7 @@ class Section extends Page {
             <img src="${this.oOptions.specialImage}" />
             `);
         }
-        $.get(`/pages/${this.oOptions.fname}`, (sMarkdown) => {
+        $.get(`./pages/${this.oOptions.fname}`, (sMarkdown) => {
             $(`#${this.oOptions.title}`).append(
                 marked(sMarkdown)
             )
