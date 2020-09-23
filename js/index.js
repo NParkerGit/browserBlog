@@ -43,7 +43,7 @@ class Items extends Page{
         $("article#current").append(`
             <img src="${this.oItems[this.nCurrentItem].specialImage}" />
         `);
-        $.get(`/items/${this.oItems[this.nCurrentItem].fname}`, (sMarkdown) => {
+        $.get(`./items/${this.oItems[this.nCurrentItem].fname}`, (sMarkdown) => {
             $("article#current").append(
                 marked(sMarkdown)
             )
