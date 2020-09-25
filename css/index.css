@@ -35,6 +35,8 @@ article#current img{
 
 }
 
+
+
 @media(min-width: 481px) {
     
     article#current img{
@@ -43,8 +45,8 @@ article#current img{
     margin-right: auto;
     /* width: 80%; */
 
-    width: auto !important; 
-    height: 450px !important; 
+    width: 100%; 
+    height: auto; 
     }
 }
 
