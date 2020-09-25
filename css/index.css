@@ -29,11 +29,25 @@ article#current img{
     margin-left: auto;
     margin-right: auto;
     /* width: 80%; */
-    width: auto !important; /*Keep the aspect ratio of the image*/
-    height: 450px !important;
 
-    
+    width: auto !important; 
+    height: 450px !important; 
+
 }
+
+@media(min-width: 481px) {
+    
+    article#current img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 80%; */
+
+    width: auto !important; 
+    height: 450px !important; 
+    }
+}
+
 
 article#current h1,h4,h6{
     text-align: center;
