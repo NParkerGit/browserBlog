@@ -39,6 +39,10 @@ article#current h1,h4,h6{
     text-align: center;
 }
 
+article#current h6{
+    font-size: 150%;
+}
+
 article#items img:hover{
     transform: scale(1.25);
     border: 2px dashed white;
