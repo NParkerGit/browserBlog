@@ -39,6 +39,10 @@ article#current h1,h4,h6{
     text-align: center;
 }
 
+article#items img:hover{
+    transform: scale(1.25);
+    border: 2px dashed white;
+}
 
 table, td, th {  
     border: 1px solid #ddd;
@@ -54,10 +58,6 @@ table, td, th {
     padding: 15px;
   }
   
-  article#current p{
-      /* width: 150px; */
-      /* float: right; */
-  }
   footer{background-color: blue;
 color: white;
 font-size: 25px;
