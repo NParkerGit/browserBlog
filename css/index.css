@@ -30,24 +30,10 @@ article#current img{
     margin-right: auto;
     /* width: 80%; */
 
-    width: auto !important; 
-    height: 450px !important; 
+    /* width: auto !important;  */
+    width: 50%; 
+    height: 475px !important; 
 
-}
-
-
-
-@media(min-width: 481px) {
-    
-    article#current img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 80%; */
-
-    width: 100%; 
-    height: auto; 
-    }
 }
 
 
